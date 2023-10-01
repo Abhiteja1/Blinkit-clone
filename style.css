@@ -2,8 +2,15 @@
 ::-webkit-scrollbar {
     display: none;
 }
+.list,.categories2,.categories, .footer-row1,.footer-row2,.footer-row3{
+    margin-top: 20px !important;
+}
 nav{
     height:100px;
+    position: sticky;
+    background-color:white;
+    top:0px;
+    z-index:2;
 }
 #vertical-line{
     border-left: 2px solid rgb(198, 198, 198);
@@ -112,7 +119,7 @@ tr>td>a{
     .hero>img{
         display: none !important;
     }
-    nav,.footer-row1,.footer-row2{
+    nav,.footer-row2{
         flex-direction: column;
         align-items: center;
         margin: auto;
@@ -121,4 +128,26 @@ tr>td>a{
         flex-direction: column;
         margin-bottom: 10px !important;
     }
+    .footer-row1{
+        flex-direction: column;
+    }
+    .footer-row2-col2>button{
+        margin-bottom: 10px;
+    }
+    nav{
+        position: static !important;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+    #vertical-line{
+        display:none !important;
+    }
+    .searchbar{
+        width:90vw;
+    }
+    .list{
+        position: relative;
+    }
+
 }
